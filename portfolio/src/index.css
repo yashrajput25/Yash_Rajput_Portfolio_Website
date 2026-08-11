@@ -1,1 +1,5 @@
+@import url('https://googleapis.com');
 @import "tailwindcss";
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+}
