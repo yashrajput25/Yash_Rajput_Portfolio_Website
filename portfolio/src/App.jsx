@@ -1,17 +1,20 @@
 import NavigationBar from "./components/navigationBar";
-import image from "./assets/image.png";
 import Footer from "./components/footer";
+import MainPageContent from "./components/MainPageContent";
 
 const App = () => {
 
   return (
-  <main>
-          <div className="parentContainer">
+    <div className="flex flex-col min-h-screen">
 
             <NavigationBar/>
-            
-          </div>
-      </main>
+
+        <main className="flex-1">
+            <MainPageContent/>
+        </main>
+
+            <Footer/>
+    </div>
   )
 
 }
