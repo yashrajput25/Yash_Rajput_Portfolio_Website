@@ -5,11 +5,14 @@ import GithubButton from './buttons/githubButton';
 const Footer = () => { 
 
     return (
-        <div className="w-full bg-red-50 pl-20 pb-20">
-            <div className="buttonContainer flex gap-10 items-center pt-10">
-                <LinkedInButton/>
-                <GithubButton/>
+        <div className="w-full border-2 border-gray-100 flex items-center justify-center py-6 ">
+            
+            <div className="links_container flex gap-10">
+                <LinkedInButton></LinkedInButton>
+                <GithubButton></GithubButton>
+
             </div>
+
         </div>
 
     );
