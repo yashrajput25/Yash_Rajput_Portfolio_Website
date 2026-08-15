@@ -1,5 +1,3 @@
-import Amity from "../assets/amity.jpeg"
-
 const Card = ({year, degree, college, location, link}) => {
     return (
 

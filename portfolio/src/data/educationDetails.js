@@ -1,6 +1,6 @@
-import Amity from '../assets/amity.jpeg';
-import IIITD from '../assets/iiitd.jpeg';
-import School from '../assets/school.jpg';
+import Amity from '../assets/amity.png';
+import IIITD from '../assets/iiitd.png';
+import School from '../assets/school.png';
 
 
 const educationDetails = [
