@@ -6,9 +6,13 @@ const NavigationButton = ({text, link}) =>{
 
             <a className="singleNavButton_container 
             flex items-center justify-center h-full w-full font-poppins 
-            font-semibold text-xl px-1.25 mx-auto hover:bg-blue-50" 
+            font-semibold md:text-2xl text-xl px-1.25 mx-auto hover:shadow-2xl rounded-2xl 
+            hover:bg-blue-50" 
             href="">
-                {text}
+                <span>
+                    {text}
+                </span>
+                
             </a>
 
 
