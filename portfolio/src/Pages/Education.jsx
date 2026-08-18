@@ -12,11 +12,11 @@ const Education = () => {
         </header>
 
         <main className="education-details-content 
-        md:px-[100px] md:py-[100px] px-[50px] py-[50px]">
+        md:px-25 md:py-25 px-8.5 py-12.5">
 
-            <div className="flex flex-col gap-[35px]">
+            <div className="flex flex-1 flex-col gap-8.75">
 
-                <div className="flex flex-col items-center justify-center mb-[20px]">
+                <div className="flex flex-col items-center justify-center mb-5">
                     
                     <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-blue-600">
                         My Journey
