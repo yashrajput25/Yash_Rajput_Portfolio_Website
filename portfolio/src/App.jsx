@@ -1,20 +1,18 @@
-import NavigationBar from "./components/navigationBar";
-import Footer from "./components/footer";
-import MainPageContent from "./components/MainPageContent";
+import Contact from "./Pages/Contact";
+import Education from "./Pages/Education";
+import Home from "./Pages/HomePage";
+import Skills from "./Pages/Skills";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const App = () => {
 
   return (
-    <div className="flex flex-col min-h-screen">
-
-            <NavigationBar/>
-
-        <main className="flex-1">
-            <MainPageContent/>
-        </main>
-
-            <Footer/>
+    <div>
+      <Home/>
+      <Education/>
+      <Contact/>
     </div>
+
   )
 
 }
