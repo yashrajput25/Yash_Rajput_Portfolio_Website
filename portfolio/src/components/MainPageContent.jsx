@@ -11,7 +11,7 @@ const MainPageContent = () =>{
             <h1 className="text-6xl md:text-9xl font-semibold font-poppins">Hi,</h1>
             <h1 className="text-6xl md:text-9xl font-semibold font-poppins">I am <span className="text-[#4070F4]">Yash</span></h1>
 
-            <div className="flex gap-10 py-10">
+            <div className="flex gap-10 py-10 px-10">
                 <ContactButton text={"Get in touch"}/>
                 <ContactButton text={"Download Resume"}/>
                 
