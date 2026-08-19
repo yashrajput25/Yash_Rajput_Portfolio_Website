@@ -37,9 +37,10 @@ const ContactForm = () => {
     }
 
     return (
-        <form onSubmit = {onSubmit} className="contact-card 
+        <form onSubmit = {onSubmit} 
+        className="contact-card 
             flex flex-col border-2 border-gray-200 rounded-2xl 
-            pt-18.75 pb-10 px-12.5 md:min-w-3xl gap-10">
+            pt-18.75 pb-10 md:px-12.5 md:mx-50 mx-5 px-5 gap-7.5">
                 
                 <div className="contact-form flex flex-col gap-6.25">
                     
