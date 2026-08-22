@@ -10,7 +10,7 @@ import Tools from "../components/SkillSections/Tools";
 import AllSkills from "../components/SkillSections/AllSkills";
 const Skills = () => { 
 
-    const [activeTab, setActiveTab] = useState("Frontend");
+    const [activeTab, setActiveTab] = useState("All");
 
     return (
         
