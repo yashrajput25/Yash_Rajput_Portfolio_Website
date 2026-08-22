@@ -1,9 +1,15 @@
 const SkillButton = ({text, setActiveTab}) => {
+
+
     
     return (
         <button 
         onClick={()=>setActiveTab(text)}
-        className="border-2 my-1.5 border-gray-200 rounded-2xl py-3.75 px-10 text-xl font-poppins hover:border-[#4070F4] hover:shadow-xl"
+        className="border-2 my-1.5 border-gray-200 
+        rounded-2xl py-3.75 px-10 text-xl font-poppins 
+        hover:border-[#4070F4] hover:shadow-xl
+        transition-transform duration-500 hover:scale-105
+        "
         >
             {text}
         </button>
