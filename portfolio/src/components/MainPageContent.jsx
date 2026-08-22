@@ -21,7 +21,7 @@ const MainPageContent = () =>{
             </div>
         </div>
 
-        <div className="image-container size-75 md:size-150">
+        <div className="image-container size-75 md:size-150 transition-transform duration-500 hover:scale-105">
             <img src={face} alt="face_image" />
         </div>
 
