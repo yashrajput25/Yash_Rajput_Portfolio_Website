@@ -5,7 +5,8 @@ const Card = ({year, degree, college, location, link}) => {
             md:flex font-poppins
             border-2 border-gray-200 justify-between rounded-4xl 
             items-center shadow-md transition 
-            duration-300 hover:shadow-xl">
+            duration-300 hover:shadow-xl active:shadow-2xl
+            active:scale-105 active:border-[#4070F4]">
 
                 <div className="education-details-container flex flex-col 
                 md:gap-3 md:px-12.5 md:py-12.5
@@ -21,7 +22,8 @@ const Card = ({year, degree, college, location, link}) => {
                 </div>
 
                 <div className="education-image-container md:w-150">
-                    <img className="rounded-4xl p-5 transition-transform duration-500 hover:scale-105" src={link} alt="" />
+                    <img className="rounded-4xl p-5 transition-transform duration-500 
+                    hover:scale-105 active:scale-105" src={link} alt="" />
                 </div>
 
             </div>

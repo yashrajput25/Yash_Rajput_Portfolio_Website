@@ -6,6 +6,7 @@ const SkillCard = ({text, linkToImage}) => {
         justify-center gap-3 rounded-xl border-gray-200 hover:shadow-xl
          hover:border-[#4070F4] md:m-5 m-2.5
          transition-transform duration-500 hover:scale-105
+         active:scale-110 active:border-[#4070F4] active:shadow-xl
         ">
 
             <div className="img_conatiner w-10 h-10">
