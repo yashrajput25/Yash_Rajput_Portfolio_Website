@@ -5,10 +5,6 @@ import ContactForm from "../components/ContactForm";
 const Contact = () => {
     return (
     <div className="flex flex-col min-h-screen">
-        
-        <header>
-            <NavigationBar/>
-        </header>
             
         <main className="flex flex-col flex-1 
         items-center justify-center gap-12.5 

@@ -7,10 +7,6 @@ import educationDetails from "../data/educationDetails";
 const Education = () => { 
     return <div className="flex flex-col min-h-screen">
 
-        <header>
-            <NavigationBar/>
-        </header>
-
         <main className="education-details-content 
         md:px-25 md:py-25 px-8.5 py-12.5">
 
