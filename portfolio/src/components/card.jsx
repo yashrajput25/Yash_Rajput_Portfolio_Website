@@ -5,7 +5,7 @@ const Card = ({year, degree, college, location, link}) => {
             md:flex font-poppins
             border-2 border-gray-200 justify-between rounded-4xl 
             items-center shadow-md transition 
-            duration-300 hover:shadow-xl active:shadow-2xl
+            duration-300 hover:shadow-xl hover:border-[#4070F4] active:shadow-2xl
             active:scale-105 active:border-[#4070F4]">
 
                 <div className="education-details-container flex flex-col 
