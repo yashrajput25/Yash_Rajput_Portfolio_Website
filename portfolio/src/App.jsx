@@ -1,6 +1,7 @@
 import Contact from "./Pages/Contact";
 import Education from "./Pages/Education";
 import Home from "./Pages/HomePage";
+import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";
 import FluidCursor from "./components/FluidCursor";
 import Footer from "./components/footer";
@@ -13,6 +14,7 @@ const App = () => {
     <div>
 
       <NavigationBar/>
+      <Projects/>
       <FluidCursor/>
       <Home/>
       <Education/>
