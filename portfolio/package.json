@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -18,7 +18,8 @@
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.2",
     "styled-components": "^6.5.1",
-    "sweetalert2": "^11.26.25"
+    "sweetalert2": "^11.26.25",
+    "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",

@@ -3,15 +3,16 @@ import ProjectCard from '../components/ProjectCard'
 import MiniProjectCard from '../components/MiniProjectCard';
 import cognitrix from "../assets/cognitrix.png";
 import ssh from "../assets/ssh-website.png";
+import Footer from '../components/footer';
 
 const Projects = () => {
     return (
-        <div className= "project-page-content flex flex-wrap justify-center-safe items-center-safe py-[100px] gap-[100px]">
+        <div className= "project-page-content page-text-animation flex flex-col flex-wrap justify-center-safe items-center-safe pt-12.5 gap-25 px-8.5 min-h-screen">
 
             <div className='professional-project-container flex flex-wrap flex-col items-center-safe justify-center gap-10'>
 
                 <div>
-                    <h1 className='text-4xl font-poppins font-semibold text-slate-900 '>Professional Projects</h1>    
+                    <h1 className='md:text-4xl text-3xl font-poppins font-semibold text-slate-900 '>Professional Projects</h1>    
                     <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-blue-600" />
                 </div>    
 
@@ -45,7 +46,7 @@ const Projects = () => {
         <div className= 'personal-project-container flex flex-wrap flex-col items-center-safe justify-center gap-10'>
             
             <div>
-                    <h1 className='text-4xl font-poppins font-semibold text-slate-900 '>Personal Projects</h1>    
+                    <h1 className='md:text-4xl text-3xl font-poppins font-semibold text-slate-900 '>Personal Projects</h1>    
                     <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-blue-600" />
             </div>  
 
@@ -112,6 +113,8 @@ const Projects = () => {
             
 
         </div>
+
+        <Footer/>
         
         </div>
     )

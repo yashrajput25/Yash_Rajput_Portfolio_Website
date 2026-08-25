@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./Pages/Contact";
 import Education from "./Pages/Education";
 import Home from "./Pages/HomePage";
@@ -6,25 +7,46 @@ import Skills from "./Pages/Skills";
 import FluidCursor from "./components/FluidCursor";
 import Footer from "./components/footer";
 import NavigationBar from "./components/navigationBar";
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+
 
 const App = () => {
 
   return (
-    <div>
+      <BrowserRouter basename="/Yash_Rajput_Portfolio_Website">
 
-      <NavigationBar/>
-      <Projects/>
-      <FluidCursor/>
-      <Home/>
-      <Education/>
-      <Contact/>
-      <Skills/>
+            <NavigationBar />
+            <FluidCursor/>
 
-      
-    </div>
+            <Routes>
 
-  )
+                <Route path="/" element={<Home />} />
+
+                <Route
+                    path="/education"
+                    element={<Education />}
+                />
+
+                <Route
+                    path="/skills"
+                    element={<Skills />}
+                />
+
+                <Route
+                    path="/projects"
+                    element={<Projects />}
+                />
+
+                <Route
+                    path="/contact"
+                    element={<Contact />}
+                />
+
+            </Routes>
+
+        </BrowserRouter>
+        
+  );
 
 }
 

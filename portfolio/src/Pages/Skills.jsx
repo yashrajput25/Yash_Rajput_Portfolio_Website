@@ -8,13 +8,14 @@ import BackendSkills from "../components/SkillSections/BackendSkills";
 import Databases from "../components/SkillSections/Databases";
 import Tools from "../components/SkillSections/Tools";
 import AllSkills from "../components/SkillSections/AllSkills";
+import Footer from "../components/footer";
 const Skills = () => { 
 
     const [activeTab, setActiveTab] = useState("All");
 
     return (
         
-        <div className="skills-page-content flex flex-col flex-1 md:gap-15 gap-2.5 min-h-screen py-15">
+        <div className="skills-page-content page-text-animation flex flex-1 flex-col md:gap-15 gap-2.5 min-h-screen pt-15">
 
 
                 <div className="flex flex-col items-center justify-center mb-5">
@@ -47,6 +48,11 @@ const Skills = () => {
                 {activeTab === "Databases" && <Databases/>}
                 {activeTab === "Tools" && <Tools/>}
             </div>
+
+            <div className="mt-auto">
+                <Footer/>
+            </div>
+            
 
         </div>
     );
