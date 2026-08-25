@@ -11,15 +11,15 @@ const Card = ({year, degree, college, location, link}) => {
 
                 <div className="education-details-container flex flex-col 
                 md:gap-3 md:px-12.5 md:py-12.5
-                gap-3.75 px-6.25 py-10" >
+                gap-1.5 px-6.25 pt-10" >
 
                     <div className="bg-blue-50 w-fit rounded-4xl">
                         <h1 className="text-sm font-semibold md:text-2xl px-4 py-1.5 text-blue-600">{year}</h1>
                     </div>
                     
-                    <h2 className="md:text-4xl text-3xl font-bold">{degree}</h2>
-                    <h3 className="md:text-3xl text-2xl">{college}</h3>
-                    <h4 className="md:text-2xl text-xl">{location}</h4>
+                    <h2 className="md:text-4xl text-2xl font-bold ">{degree}</h2>
+                    <h3 className="md:text-3xl text-xl font-se text-gray-600">{college}</h3>
+                    <h4 className="md:text-2xl text-[15px] text-gray-600">{location}</h4>
                 </div>
 
                 <div className="education-image-container md:w-150">

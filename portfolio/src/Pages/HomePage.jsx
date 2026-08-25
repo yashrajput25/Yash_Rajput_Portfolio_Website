@@ -5,18 +5,20 @@ import FluidCursor from "../components/FluidCursor"
 
 const Home = ()=> {
     return (
+
+    <div>
         
     <div className="flex flex-col h-full min-h-screen">
 
         <section className="flex-1">
             <MainPageContent/>
-        </section>
-        
+        </section>            
+    </div>
 
-        <footer className="mt-auto">
+    <footer className="">
             <Footer/>
-        </footer>
-            
+    </footer>
+
     </div>
     );
 }

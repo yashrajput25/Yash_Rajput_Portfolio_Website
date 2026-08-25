@@ -18,7 +18,7 @@ const Education = () => {
                         My Journey
                     </p>
 
-                    <h1 className="font-poppins text-4xl font-semibold text-slate-900 sm:text-5xl">
+                    <h1 className="font-poppins text-4xl font-semibold text-slate-900 ">
                         Education
                     </h1>
                     <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-blue-600" />

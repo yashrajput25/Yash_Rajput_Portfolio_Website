@@ -24,8 +24,8 @@ const ProjectCard = ({title, description,techStack, imageLink, websiteLink, code
                 </div>
 
                 <div className='flex flex-col gap-8'>
-                    <p className='font-semibold md:text-xl'>{description}</p>
-                    <p className='font-semibold md:text-xl'>
+                    <p className='font-semibold md:text-xl text-gray-600'>{description}</p>
+                    <p className='font-semibold md:text-xl text-gray-600'>
                         <span className='font-bold'> Tech Stack : </span>
                         {techStack}
                     </p>

@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 const MainPageContent = () =>{
 
     return (
-    <div className="flex flex-col-reverse md:flex-row gap-10 items-center justify-center px-4 md:px-15 md:py-20 py-25">
+    <div className="flex flex-col-reverse md:flex-row gap-10 items-center justify-center px-4 md:px-15 md:py-20 py-10">
         
         <div className="introduction-container flex flex-col gap-5 page-text-animation">
             <div className="flex flex-col gap-5 px-10">

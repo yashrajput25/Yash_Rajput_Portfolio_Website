@@ -11,7 +11,7 @@ const Contact = () => {
         md:py-20 py-15 md:px-25 font-poppins w-full ">
             
             <div>
-                <h1 className="contact-heading font-bold md:text-5xl text-3xl">Contact Me</h1>
+                <h1 className="contact-heading font-bold text-4xl">Contact Me</h1>
                 <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-blue-600" />
             </div>
 

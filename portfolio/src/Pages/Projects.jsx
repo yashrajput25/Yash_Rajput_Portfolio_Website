@@ -7,12 +7,16 @@ import Footer from '../components/footer';
 
 const Projects = () => {
     return (
+        <div>
         <div className= "project-page-content page-text-animation flex flex-col flex-wrap justify-center-safe items-center-safe pt-12.5 gap-25 px-8.5 min-h-screen">
 
             <div className='professional-project-container flex flex-wrap flex-col items-center-safe justify-center gap-10'>
 
-                <div>
-                    <h1 className='md:text-4xl text-3xl font-poppins font-semibold text-slate-900 '>Professional Projects</h1>    
+                <div className="flex flex-col items-center justify-center mb-5">
+                    <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-blue-600">
+                        Professional
+                    </p>
+                    <h1 className='md:text-4xl text-3xl font-poppins font-semibold text-slate-900 '>Projects</h1>    
                     <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-blue-600" />
                 </div>    
 
@@ -39,16 +43,18 @@ const Projects = () => {
 
                 </div>
 
-
-
             </div>
 
         <div className= 'personal-project-container flex flex-wrap flex-col items-center-safe justify-center gap-10'>
             
-            <div>
-                    <h1 className='md:text-4xl text-3xl font-poppins font-semibold text-slate-900 '>Personal Projects</h1>    
+
+                <div className="flex flex-col items-center justify-center mb-5">
+                    <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-blue-600">
+                        Personal
+                    </p>
+                    <h1 className='md:text-4xl text-3xl font-poppins font-semibold text-slate-900 '>Projects</h1>    
                     <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-blue-600" />
-            </div>  
+                </div>   
 
             <div className='flex flex-wrap gap-10 items-center-safe justify-center'>
         
@@ -112,11 +118,17 @@ const Projects = () => {
             </div>
             
 
-        </div>
-
-        <Footer/>
+        </div>        
         
         </div>
+
+        <footer className='mt-[50px]'>
+            <Footer/>
+        </footer>
+
+        </div>
+
+
     )
 }
 

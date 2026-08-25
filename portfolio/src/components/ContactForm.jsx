@@ -48,21 +48,21 @@ const ContactForm = () => {
                 <div className="contact-form flex flex-col gap-6.25">
                     
                     <div className="flex flex-col gap-2.5">
-                        <label className="text-2xl font-semibold text-gray-700">Name</label>
+                        <label className="md:text-2xl text-xl font-semibold text-gray-700">Name</label>
 
-                        <input type="text" name="name" placeholder="Enter your name" className="w-full border-b-2 text-xl border-gray-300 focus:outline-none focus:border-blue-600"/>
+                        <input type="text" name="name" placeholder="Enter your name" className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-600"/>
                     </div>
 
                     <div className="flex flex-col gap-2.5">
-                        <label className="text-2xl font-semibold text-gray-700">Email</label>
+                        <label className="md:text-2xl text-xl font-semibold text-gray-700">Email</label>
 
-                        <input name="email" type="text" placeholder="Enter your email" className="w-full border-b-2 text-xl border-gray-300 focus:outline-none focus:border-blue-600 transition-colors"/>
+                        <input name="email" type="text" placeholder="Enter your email" className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-600 transition-colors"/>
                     </div>
 
                     <div className="flex flex-col gap-2.5">
-                        <label className="text-2xl font-semibold text-gray-700">Message</label>
+                        <label className="md:text-2xl text-xl font-semibold text-gray-700">Message</label>
 
-                        <textarea name="message" type="text" placeholder="Enter your message" className="w-full min-h-25  border-b-2 text-xl border-gray-300 focus:outline-none focus:border-blue-600"/>
+                        <textarea name="message" type="text" placeholder="Enter your message" className="w-full min-h-25 border-b-2 border-gray-300 focus:outline-none focus:border-blue-600"/>
                     </div>
                 </div> 
                 
