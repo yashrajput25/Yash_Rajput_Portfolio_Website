@@ -41,6 +41,7 @@ const ContactForm = () => {
         className="contact-card 
             flex flex-col border-2 border-gray-200 rounded-2xl 
             pt-18.75 pb-10 md:px-12.5 md:mx-50 mx-5 px-5 gap-7.5
+            transition-transform duration-500
             hover:scale-105 hover:shadow-2xl
             active:shadow-2xl
             ">

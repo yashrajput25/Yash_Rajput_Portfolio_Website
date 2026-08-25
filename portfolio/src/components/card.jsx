@@ -4,10 +4,10 @@ const Card = ({year, degree, college, location, link}) => {
             <div className="
             md:flex font-poppins
             border-2 border-gray-200 justify-between rounded-4xl 
-            items-center shadow-md transition 
-            duration-300 hover:shadow-xl hover:border-[#4070F4] active:shadow-2xl
-            active:scale-105 active:border-[#4070F4]
-            hover:scale-105">
+            items-center shadow-md transition-transform
+            duration-500 hover:shadow-xl hover:border-[#4070F4] active:shadow-2xl
+            active:scale-102 active:border-[#4070F4]
+            hover:scale-102">
 
                 <div className="education-details-container flex flex-col 
                 md:gap-3 md:px-12.5 md:py-12.5
