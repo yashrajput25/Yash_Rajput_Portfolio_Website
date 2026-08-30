@@ -20,7 +20,8 @@ const App = () => {
         AOS.init({
         duration: 1000, // Animation duration in milliseconds
         once: false,     // Whether animation should happen only once while scrolling down
-        });
+            offset: 100
+    });
     }, []);
 
     return (
