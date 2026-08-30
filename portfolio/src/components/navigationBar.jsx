@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavigationButton from "./buttons/navButton";
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeTab, setActiveTab] = useState('Home');
+
+    useEffect(()=>{
+        console.log(activeTab)
+    }, [activeTab]);
 
     return (
-        <nav className="navigation-bar w-full flex flex-col bg-white border-2 border-gray-100 shadow-xl">
+        <nav 
+        data-aos="zoom-out-down"
+        className="navigation-bar w-full flex flex-col bg-white border-2 border-gray-100 shadow-xl">
 
             {/* Top Navbar */}
             <div className="w-full flex items-center h-20 justify-between md:px-5 px-4">
@@ -17,12 +24,12 @@ const NavigationBar = () => {
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex h-full items-center justify-between gap-10">
-                    <NavigationButton text="Home" link="/" />
-                    <NavigationButton text="Education" link="/education" />
-                    <NavigationButton text="Skills" link="/skills" />
-                    <NavigationButton text="Projects" link="/projects" />
+                    <NavigationButton text="Home" link="/" activeTab = {activeTab} setActiveTab = {setActiveTab}  iconName={"home"} />
+                    <NavigationButton text="Education" link="/education" activeTab = {activeTab} setActiveTab = {setActiveTab}  iconName={"book"}/>
+                    <NavigationButton text="Skills" link="/skills"  activeTab = {activeTab} setActiveTab = {setActiveTab} iconName={"wrench"}/>
+                    <NavigationButton text="Projects" link="/projects" activeTab = {activeTab} setActiveTab = {setActiveTab} iconName={"pyramid"} />
                     {/* <NavigationButton text="About" link="/about" /> */}
-                    <NavigationButton text="Contact" link="/contact" />
+                    <NavigationButton text="Contact" link="/contact" activeTab = {activeTab} setActiveTab = {setActiveTab} iconName={"envelope"} />
                 </div>
 
                 {/* Hamburger */}
@@ -41,21 +48,33 @@ const NavigationBar = () => {
                     <NavigationButton
                         text="Home"
                         link="/"
+                        activeTab = {activeTab}
+                        setActiveTab = {setActiveTab}
+                        iconName={"home"}
                     />
 
                     <NavigationButton
                         text="Education"
                         link="/education"
+                        activeTab = {activeTab}
+                        setActiveTab = {setActiveTab}
+                        iconName={"book"}
                     />
 
                     <NavigationButton
                         text="Skills"
                         link="/skills"
+                        activeTab = {activeTab}
+                        setActiveTab = {setActiveTab}
+                        iconName={"wrench"}
                     />
 
                     <NavigationButton
                         text="Projects"
                         link="/projects"
+                        activeTab = {activeTab}
+                        setActiveTab = {setActiveTab}
+                        iconName={"pyramid"}
                     />
 
                     {/* <NavigationButton
@@ -66,6 +85,9 @@ const NavigationBar = () => {
                     <NavigationButton
                         text="Contact"
                         link="/contact"
+                        activeTab = {activeTab}
+                        setActiveTab = {setActiveTab}
+                        iconName={"envelope"}
                     />
                 </div>
             )}

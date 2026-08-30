@@ -30,13 +30,14 @@ const Skills = () => {
                     <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-blue-600" />
                 </div>
 
-            <div className="tabbed-navigation-bar flex flex-wrap items-center justify-center gap-1.5 md:gap-12.5">
-                <SkillButton  text="All" setActiveTab = {setActiveTab}/>
-                <SkillButton text="Languages" setActiveTab = {setActiveTab}/>
-                <SkillButton text="Frontend" setActiveTab={setActiveTab}/>
-                <SkillButton text="Backend" setActiveTab={setActiveTab}/>
-                <SkillButton text="Databases" setActiveTab={setActiveTab}/>
-                <SkillButton text="Tools" setActiveTab={setActiveTab}/>
+            <div data-aos="zoom-in"
+            className="tabbed-navigation-bar flex flex-wrap items-center justify-center gap-1.5 md:gap-12.5">
+                <SkillButton text="All" activeTab = {activeTab} setActiveTab = {setActiveTab}/>
+                <SkillButton text="Languages" activeTab = {activeTab} setActiveTab = {setActiveTab}/>
+                <SkillButton text="Frontend" activeTab = {activeTab} setActiveTab={setActiveTab}/>
+                <SkillButton text="Backend"  activeTab = {activeTab} setActiveTab={setActiveTab}/>
+                <SkillButton text="Databases" activeTab = {activeTab} setActiveTab={setActiveTab}/>
+                <SkillButton text="Tools" activeTab = {activeTab} setActiveTab={setActiveTab}/>
             </div>
 
             <div className="skills-section flex items-center justify-center">

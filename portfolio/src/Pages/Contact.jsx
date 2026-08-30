@@ -15,7 +15,8 @@ const Contact = () => {
                 <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-blue-600" />
             </div>
 
-            <div className="contact-form-container min-w-screen">
+            <div
+             className="contact-form-container min-w-screen">
                 <ContactForm/>
             </div>
             

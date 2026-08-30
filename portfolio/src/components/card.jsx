@@ -1,7 +1,7 @@
 const Card = ({year, degree, college, location, link}) => {
     return (
 
-            <div className="
+            <div data-aos="flip-down" className="
             md:flex font-poppins
             border-2 border-gray-200 justify-between rounded-4xl 
             items-center shadow-md transition-transform

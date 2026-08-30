@@ -38,6 +38,7 @@ const ContactForm = () => {
 
     return (
         <form onSubmit = {onSubmit} 
+        data-aos="zoom-out-up"
         className="contact-card 
             flex flex-col border-2 border-gray-200 rounded-2xl 
             pt-18.75 pb-10 md:px-12.5 md:mx-50 mx-5 px-5 gap-7.5

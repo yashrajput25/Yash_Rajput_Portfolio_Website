@@ -1,35 +1,14 @@
-// import { Link } from "react-router-dom";
 
-// const NavigationButton = ({text, link}) =>{
-
-//     return (
-
-//             <Link to= {link} 
-//             className="singleNavButton_container 
-//             flex items-center justify-center h-full w-full font-poppins 
-//             font-semibold md:text-2xl text-xl px-1.25 mx-auto hover:shadow-2xl rounded-2xl 
-//             hover:bg-blue-50" 
-//             >
-//                 <span>
-//                     {text}
-//                 </span>
-//             </Link>
-
-
-//     );
-// }
-
-// export default NavigationButton;
 
 import { Link } from "react-router-dom";
+import 'boxicons';
 
-const NavigationButton = ({ text, link }) => {
+const NavigationButton = ({ text, link, iconName, activeTab, setActiveTab }) => {
 
     return (
         <Link
             to={link}
-            className="
-                singleNavButton_container
+            className= { `singleNavButton_container
                 page-text-animation
                 flex items-center justify-center
                 h-12 w-full
@@ -38,15 +17,18 @@ const NavigationButton = ({ text, link }) => {
                 px-1.25
                 mx-auto
                 hover:shadow-2xl
-                rounded-2xl
-                hover:bg-blue-50
-                hover:border-2
-                hover:border-blue-500
-            "
+                hover:border-b-8
+                hover:border-blue-700 ${activeTab === text ? "bg-blue-100 rounded-2xl px-2.5 py-5" : "" }` }
+            
         >
-            <span>
+            <button 
+            onClick={()=>setActiveTab(text)}
+            className="flex gap-2 items-center"
+            >
                 {text}
-            </span>
+                <box-icon name={iconName} ></box-icon>
+
+            </button>
         </Link>
     );
 };

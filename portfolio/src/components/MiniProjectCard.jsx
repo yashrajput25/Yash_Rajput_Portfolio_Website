@@ -4,7 +4,9 @@ import ProjectButton from './buttons/ProjectButton'
 const MiniProjectCard = ({title, description, techStack, websiteLink, codeLink, isWebsiteLive, allowCodeAccess}) => {
 
         return (
-        <div className='project-card flex flex-col flex-wrap 
+        <div 
+        data-aos="flip-down"
+        className='project-card flex flex-col flex-wrap 
         md:h-110 md:w-180
         gap-5 border-2 border-gray-200 rounded-3xl md:py-5 py-10 shadow-xl
         transition-transform duration-500 hover:border-blue-500
