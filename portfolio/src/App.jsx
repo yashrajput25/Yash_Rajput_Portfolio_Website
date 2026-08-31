@@ -8,10 +8,8 @@ import Skills from "./Pages/Skills";
 import { useEffect } from "react";
 import FluidCursor from "./components/FluidCursor";
 import NavigationBar from "./components/navigationBar";
-
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-
 
 const App = () => {
 
@@ -25,12 +23,14 @@ const App = () => {
     }, []);
 
     return (
+
+        
         <HashRouter>
 
             <NavigationBar />
 
             <FluidCursor />
-
+            
             <Routes>
 
                 <Route

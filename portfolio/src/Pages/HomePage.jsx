@@ -1,16 +1,19 @@
-import NavigationBar from "../components/navigationBar"
+
 import MainPageContent from "../components/MainPageContent"
 import Footer from "../components/footer"
-import FluidCursor from "../components/FluidCursor"
+import ParticlesBg from 'particles-bg'
 
 const Home = ()=> {
     return (
 
     <div>
         
-    <div className="flex flex-col h-full min-h-screen">
+    <div className="flex flex-col min-h-full">
 
-        <section className="flex-1">
+    <ParticlesBg color="#4070F4" num={45} 
+        type="cobweb" bg={true} />
+
+        <section className="mb-0 flex-1">
             <MainPageContent/>
         </section>            
     </div>
